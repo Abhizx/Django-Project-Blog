@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block homeactive %} active {% endblock homeactive %}
+
+{% block body %}
+<div class="container" id="jumbo1bg">
+    <div class="jumbotron my-3" id="ok">
+        <h1 id="wdisplay" class="display-4">Welcome to KnowledgeForYou!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="/blog" role="button">Go to Blog</a>
+    </div>
+</div>
+<div class="container">
+    <h2 id="popu111">Popular Blogposts:</h2>
+    <div
+        class="row no-gutters border rounded overflow-hidden my-4 flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Article by {{post.author}}</strong>
+            <h3 class="mb-0">{{post.title}}</h3>
+            <div class="mb-1 text-muted">{{post.datetime}}</div>
+            <p class="card-text mb-auto">{{post.content| truncatechars:500}}</p>
+            <div class="my-2">
+                <a href="/blog/{{post.slug}}" role = "button" class="btn btn-primary">Continue reading</a>
+            </div>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Thumbnail</text>
+            </svg> -->
+        </div>
+    </div>
+    <div
+        class="row no-gutters border rounded overflow-hidden my-4 flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Article by {{post2.author}}</strong>
+            <h3 class="mb-0">{{post2.title}}</h3>
+            <div class="mb-1 text-muted">{{post2.datetime}}</div>
+            <p class="card-text mb-auto">{{post2.content| truncatechars:500}}</p>
+            <div class="my-2">
+                <a href="/blog/{{post2.slug}}" role = "button" class="btn btn-primary">Continue reading</a>
+            </div>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Thumbnail</text>
+            </svg> -->
+        </div>
+    </div>
+    <div
+        class="row no-gutters border rounded overflow-hidden my-4 flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Article by {{post3.author}}</strong>
+            <h3 class="mb-0">{{post3.title}}</h3>
+            <div class="mb-1 text-muted">{{post3.datetime}}</div>
+            <p class="card-text mb-auto">{{post3.content| truncatechars:500}}</p>
+            <div class="my-2">
+                <a href="/blog/{{post3.slug}}" role = "button" class="btn btn-primary">Continue reading</a>
+            </div>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Thumbnail</text>
+            </svg> -->
+        </div>
+    </div>
+</div>
+{% endblock body %}
