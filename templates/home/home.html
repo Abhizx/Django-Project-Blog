@@ -8,7 +8,8 @@
 <div class="container" id="jumbo1bg">
     <div class="jumbotron my-3" id="ok">
         <h1 id="wdisplay" class="display-4">Welcome to KnowledgeForYou!</h1>
-        <p class="lead">We provide knowledgeable articles and content here related to technology and coding or programming probaly.</p>
+        <p class="lead">We provide knowledgeable articles and content here related to technology and coding or
+            programming probaly.</p>
         <hr class="my-4">
         <p>You can read articles and contact us by going to respective pages.</p>
         <a class="btn btn-primary btn-lg" href="/blog" role="button">Go to Blog</a>
@@ -34,7 +35,7 @@
             <div class="mb-1 text-muted">{{post.datetime}}</div>
             <p class="card-text mb-auto">{{post.content| truncatechars:500}}</p>
             <div class="my-2">
-                <a href="/blog/{{post.slug}}" role = "button" class="btn btn-primary">Continue reading</a>
+                <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading</a>
             </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -54,7 +55,7 @@
             <div class="mb-1 text-muted">{{post2.datetime}}</div>
             <p class="card-text mb-auto">{{post2.content| truncatechars:500}}</p>
             <div class="my-2">
-                <a href="/blog/{{post2.slug}}" role = "button" class="btn btn-primary">Continue reading</a>
+                <a href="/blog/{{post2.slug}}" role="button" class="btn btn-primary">Continue reading</a>
             </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -74,7 +75,7 @@
             <div class="mb-1 text-muted">{{post3.datetime}}</div>
             <p class="card-text mb-auto">{{post3.content| truncatechars:500}}</p>
             <div class="my-2">
-                <a href="/blog/{{post3.slug}}" role = "button" class="btn btn-primary">Continue reading</a>
+                <a href="/blog/{{post3.slug}}" role="button" class="btn btn-primary">Continue reading</a>
             </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -84,6 +85,37 @@
                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
                     dy=".3em">Thumbnail</text>
             </svg> -->
+        </div>
+    </div>
+</div>
+<div class="container my-3">
+    <div class="row">
+        <div class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;">
+            <img class="card-img-top"
+                src="/static/home/img/1.jpeg" alt="Home">
+            <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">Contact me for any query or help and you can also contact for suggestions and feedback of the website. I will try to contact back as soon as possible</p>
+                <a href="/contact" class="btn btn-primary">Go to Contact</a>
+            </div>
+        </div>
+        <div class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;">
+            <img class="card-img-top"
+                src="/static/home/img/2.jpg" alt="Home">
+            <div class="card-body">
+                <h5 class="card-title">About</h5>
+                <p class="card-text">About me and about the motive of this website and all social media handles available on about section and source code of this website also soon</p>
+                <a href="/about" class="btn btn-primary">Go to About</a>
+            </div>
+        </div>
+        <div class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;">
+            <img class="card-img-top"
+                src="/static/home/img/3.jpg" alt="Home">
+            <div class="card-body">
+                <h5 class="card-title">Blog</h5>
+                <p class="card-text">Some of the technology related informative articles available. Keep your programming knowledge up to date with our coding articles.</p>
+                <a href="/blog" class="btn btn-primary">Go to Blog</a>
+            </div>
         </div>
     </div>
 </div>
